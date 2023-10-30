@@ -62,7 +62,7 @@ class Producto{
         const card = document.createElement('div');
         card.innerHTML = `
             <div class="card" style="width: 18rem;">
-                <img src="../img/productos/${this.id}.jpg" class="card-img-top" alt="...">
+                <img src="img/productos/${this.id}.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${this.nombre}</h5>
                     <p class="card-marca">${this.marca}</p>

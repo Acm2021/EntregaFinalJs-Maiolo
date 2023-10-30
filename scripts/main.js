@@ -126,8 +126,8 @@ async function inicio(){
     const arregloDeProductos = await  fetchDataAndParse(DATA_PATH);
     const galeria = new GaleriaProductos(arregloDeProductos);
     let carrito = new Carrito();
+    
     carrito=cargarCarritoConStorage()
-    //carrito.mostrarPorPantalla()
     galeria.mostrarGaleriaPorPantalla();
 
     const contendorProductosPagina= document.querySelector("#contendorProductos")
