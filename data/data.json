@@ -65,173 +65,90 @@
       "id": "9"
     },
     {
-      "nombre": "Producto10",
-      "Tipo": "NNN",
-      "marca": "Marca10",
+      "nombre": "Pantuflas Spa R",
+      "Tipo": "Pantuflas",
+      "marca": "B&B",
       "precio": 89.99,
       "id": "10"
     },
     {
-      "nombre": "Producto11",
-      "Tipo": "AAAA",
-      "marca": "Marca11",
+      "nombre": "Vajilla con logo B&B",
+      "Tipo": "Vajilla",
+      "marca": "B&B",
       "precio": 69.99,
       "id": "11"
     },
     {
-      "nombre": "Producto12",
-      "Tipo": "NNN",
-      "marca": "Marca12",
+      "nombre": "Sabanas con logo B&B",
+      "Tipo": "Sabanas",
+      "marca": "B&B",
       "precio": 49.99,
       "id": "12"
     },
     {
-      "nombre": "Producto13",
-      "Tipo": "NNN",
-      "marca": "Marca13",
+      "nombre": "Lapiceras con logo B&B",
+      "Tipo": "Kit",
+      "marca": "staples",
       "precio": 39.99,
       "id": "13"
     },
     {
-      "nombre": "Producto14",
-      "Tipo": "BBB",
-      "marca": "Marca14",
+      "nombre": "Necessaire de viaje",
+      "Tipo": "Necessaire",
+      "marca": "PB",
       "precio": 79.99,
       "id": "14"
     },
     {
-      "nombre": "Producto15",
-      "Tipo": "NNN",
-      "marca": "Marca15",
-      "precio": 59.99,
+      "nombre": "Anotador Artesal",
+      "Tipo": "Souvenir",
+      "marca": "Olive",
+      "precio": 200,
       "id": "15"
     },
     {
-      "nombre": "Producto16",
-      "Tipo": "AAAA",
-      "marca": "Marca15",
+      "nombre": "Postal Glaciar",
+      "Tipo": "Postal",
+      "marca": "Recuerdame",
       "precio": 59.99,
       "id": "16"
     },
     {
-      "nombre": "Producto17",
-      "Tipo": "NNN",
-      "marca": "Marca15",
+      "nombre": "Postal Chalten",
+      "Tipo": "Postal",
+      "marca": "Recuerdame",
       "precio": 59.99,
       "id": "17"
     },
     {
-      "nombre": "Producto18",
-      "Tipo": "NNN",
-      "marca": "Marca15",
+      "nombre": "Postal Chalten",
+      "Tipo": "Postal",
+      "marca": "Recuerdame",
       "precio": 59.99,
       "id": "18"
     },
     {
-      "nombre": "Producto12",
-      "Tipo": "NNN",
-      "marca": "Marca12",
+      "nombre": "Llavero Fitz Roy",
+      "Tipo": "Llavero",
+      "marca": "Recuerdame",
       "precio": 49.99,
       "id": "19"
     },
     {
-      "nombre": "Producto13",
-      "Tipo": "NNN",
-      "marca": "Marca13",
+      "nombre": "Llavero Glaciar",
+      "Tipo": "Llavero",
+      "marca": "Recuerdame",
       "precio": 39.99,
       "id": "20"
     },
     {
-      "nombre": "Producto14",
-      "Tipo": "NNN",
-      "marca": "Marca14",
+      "nombre": "Cartel Calafate",
+      "Tipo": "Cartel",
+      "marca": "Recuerdame",
       "precio": 79.99,
       "id": "21"
-    },
-    {
-      "nombre": "Producto15",
-      "Tipo": "NNN",
-      "marca": "Marca15",
-      "precio": 59.99,
-      "id": "22"
-    },
-    {
-      "nombre": "Producto16",
-      "Tipo": "AAAA",
-      "marca": "Marca15",
-      "precio": 59.99,
-      "id": "23"
-    },
-    {
-      "nombre": "Producto17",
-      "Tipo": "NNN",
-      "marca": "Marca15",
-      "precio": 59.99,
-      "id": "24"
-    },
-    {
-      "nombre": "Producto18",
-      "Tipo": "NNN",
-      "marca": "Marca15",
-      "precio": 59.99,
-      "id": "25"
-    },
-    {
-      "nombre": "Producto8",
-      "Tipo": "NNN",
-      "marca": "Marca8",
-      "precio": 99.99,
-      "id": "26"
-    },
-    {
-      "nombre": "Producto14",
-      "Tipo": "NNN",
-      "marca": "Marca9",
-      "precio": 59.99,
-      "id": "27"
-    },
-    {
-      "nombre": "Producto14",
-      "Tipo": "NNN",
-      "marca": "Marca10",
-      "precio": 89.99,
-      "id": "28"
-    },
-    {
-      "nombre": "Producto11",
-      "Tipo": "AAAA",
-      "marca": "Marca11",
-      "precio": 69.99,
-      "id": "29"
-    },
-    {
-      "nombre": "Producto14",
-      "Tipo": "BBB",
-      "marca": "Marca12",
-      "precio": 49.99,
-      "id": "30"
-    },
-    {
-      "nombre": "Producto13",
-      "Tipo": "NNN",
-      "marca": "Marca13",
-      "precio": 39.99,
-      "id": "31"
-    },
-    {
-      "nombre": "Producto14",
-      "Tipo": "BBB",
-      "marca": "Marca14",
-      "precio": 79.99,
-      "id": "32"
-    },
-    {
-      "nombre": "Producto15",
-      "Tipo": "NNN",
-      "marca": "Marca15",
-      "precio": 59.99,
-      "id": "33"
     }
+    
   ]
 }
 
