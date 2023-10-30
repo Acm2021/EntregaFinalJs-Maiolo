@@ -90,24 +90,56 @@ function carritoParse(carritoDataJson){
     if (carritoDataJson) {
         let carritoSaved= new Carrito
         carritoSaved= JSON.parse(carritoDataJson)
-        console.log(carritoSaved)
+        
         return carritoSaved
     }
+}
+
+function cargarCarritoConStorage(){
+    const carritoDataJson = localStorage.getItem('carrito');
+    if (carritoDataJson) {
+        // Si hay datos, debes analizarlos de nuevo desde JSON a un objeto JavaScript
+        carritoSaved= new Carrito()
+        carritoSaved2= new Carrito()
+        carritoSaved=carritoParse(carritoDataJson)
+        for (let i = 0; i < carritoSaved.items.length; i++) {
+            const item= new Producto()
+             item.nombre = carritoSaved.items[i].nombre;
+             item.tipo = carritoSaved.items[i].tipo;
+             item.marca = carritoSaved.items[i].marca;
+             item.precio = carritoSaved.items[i].precio;
+             item.id = carritoSaved.items[i].id;
+            // Realiza alguna acción con el elemento 'item'
+            carritoSaved2.items.push(item)
+        }
+        
+        
+        //carritoSaved2.items=carritoSaved.items
+        carritoSaved2.precioTotal=carritoSaved.precioTotal
+        carritoSaved2.cantidadElemento=carritoSaved.cantidadElemento
+        return carritoSaved2
+    } else {
+        // Si no hay datos en localStorage, puedes tomar una acción predeterminada
+        console.log('No se encontraron datos del carrito en localStorage.');
+    }
+    
+  //  carrito.mostrarPorPantalla()
 }
 
 //INICIO
 
 async function inicio(){
+    
     let DATA_PATH = 'data/data.json';
     const arregloDeProductos = await  fetchDataAndParse(DATA_PATH);
-
     const galeria = new GaleriaProductos(arregloDeProductos);
     let carrito = new Carrito();
+    carrito=cargarCarritoConStorage()
+    carrito.mostrarPorPantalla()
     galeria.mostrarGaleriaPorPantalla();
 
     const contendorProductosPagina= document.querySelector("#contendorProductos")
-    contendorProductosPagina.addEventListener('click', (evt) => {
-        agregarProductoAlCarrito(evt, galeria,carrito)})
+    contendorProductosPagina.addEventListener('click', (evt) => {agregarProductoAlCarrito(evt, galeria,carrito)})
 
     const contendorCarrito = document.querySelector("#cuerpoFilasCarrito")
     contendorCarrito.addEventListener('click', (evt) => {eliminarProductoDelCarrito(evt,carrito)})
@@ -120,22 +152,9 @@ async function inicio(){
     btnFiltrarGaleria.addEventListener('click',(evt)=> {filtrarGaleria(evt,galeria)})
     const btnBorrarFiltradoGaleria= document.querySelector("#btnBorrarFiltroGaleria")
     btnBorrarFiltradoGaleria.addEventListener('click', (evt)=>{borrarFiltroCarrito(evt,galeria)})
+
 }
 
 
-
-document.addEventListener('DOMContentLoaded', ()=>{
-    const carritoDataJson = localStorage.getItem('carrito');
-    if (carritoDataJson) {
-        // Si hay datos, debes analizarlos de nuevo desde JSON a un objeto JavaScript
-        let carritoSaved= new Carrito()
-        carritoSaved=carritoParse(carritoDataJson)
-    } else {
-        // Si no hay datos en localStorage, puedes tomar una acción predeterminada
-        console.log('No se encontraron datos del carrito en localStorage.');
-    }
-})
-
 inicio();
-
 

@@ -209,6 +209,7 @@ class Carrito{
            this.items.pop()
         }  
         this.precioTotal=0
+        actualizarLocalStorage(this)
     }
 }
 
