@@ -1,0 +1,242 @@
+
+{
+  "productos":[
+    {
+      "nombre": "Toallon BL",
+      "Tipo": "Toallon con logo B&B",
+      "marca": "B&B",
+      "precio": 49.99,
+      "id": "1"
+    },
+    {
+      "nombre": "Taza",
+      "Tipo": "Taza con logo B&B",
+      "marca": "B&B",
+      "precio": 29.99,
+      "id": "2"
+    },
+    {
+      "nombre": "Toallon R",
+      "Tipo": "Toallon con logo B&B",
+      "marca": "CANNON",
+      "precio": 19.99,
+      "id": "3"
+    },
+    {
+      "nombre": "Kit Body Lotion",
+      "Tipo": "Kit",
+      "marca": "Forgetme",
+      "precio": 39.99,
+      "id": "4"
+    },
+    {
+      "nombre": "Kit Olive",
+      "Tipo": "Kit",
+      "marca": "Olive",
+      "precio": 59.99,
+      "id": "5"
+    },
+    {
+      "nombre": "Kit Spa",
+      "Tipo": "Kit",
+      "marca": "Olive",
+      "precio": 79.99,
+      "id": "6"
+    },
+    {
+      "nombre": "Bata de Baño",
+      "Tipo": "Kit",
+      "marca": "CANNON",
+      "precio": 69.99,
+      "id": "7"
+    },
+    {
+      "nombre": "Bata de baño",
+      "Tipo": "Bata",
+      "marca": "CANNON",
+      "precio": 99.99,
+      "id": "8"
+    },
+    {
+      "nombre": "Producto9",
+      "Tipo": "NNN",
+      "marca": "Marca9",
+      "precio": 59.99,
+      "id": "9"
+    },
+    {
+      "nombre": "Producto10",
+      "Tipo": "NNN",
+      "marca": "Marca10",
+      "precio": 89.99,
+      "id": "10"
+    },
+    {
+      "nombre": "Producto11",
+      "Tipo": "AAAA",
+      "marca": "Marca11",
+      "precio": 69.99,
+      "id": "11"
+    },
+    {
+      "nombre": "Producto12",
+      "Tipo": "NNN",
+      "marca": "Marca12",
+      "precio": 49.99,
+      "id": "12"
+    },
+    {
+      "nombre": "Producto13",
+      "Tipo": "NNN",
+      "marca": "Marca13",
+      "precio": 39.99,
+      "id": "13"
+    },
+    {
+      "nombre": "Producto14",
+      "Tipo": "BBB",
+      "marca": "Marca14",
+      "precio": 79.99,
+      "id": "14"
+    },
+    {
+      "nombre": "Producto15",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "15"
+    },
+    {
+      "nombre": "Producto16",
+      "Tipo": "AAAA",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "16"
+    },
+    {
+      "nombre": "Producto17",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "17"
+    },
+    {
+      "nombre": "Producto18",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "18"
+    },
+    {
+      "nombre": "Producto12",
+      "Tipo": "NNN",
+      "marca": "Marca12",
+      "precio": 49.99,
+      "id": "19"
+    },
+    {
+      "nombre": "Producto13",
+      "Tipo": "NNN",
+      "marca": "Marca13",
+      "precio": 39.99,
+      "id": "20"
+    },
+    {
+      "nombre": "Producto14",
+      "Tipo": "NNN",
+      "marca": "Marca14",
+      "precio": 79.99,
+      "id": "21"
+    },
+    {
+      "nombre": "Producto15",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "22"
+    },
+    {
+      "nombre": "Producto16",
+      "Tipo": "AAAA",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "23"
+    },
+    {
+      "nombre": "Producto17",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "24"
+    },
+    {
+      "nombre": "Producto18",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "25"
+    },
+    {
+      "nombre": "Producto8",
+      "Tipo": "NNN",
+      "marca": "Marca8",
+      "precio": 99.99,
+      "id": "26"
+    },
+    {
+      "nombre": "Producto14",
+      "Tipo": "NNN",
+      "marca": "Marca9",
+      "precio": 59.99,
+      "id": "27"
+    },
+    {
+      "nombre": "Producto14",
+      "Tipo": "NNN",
+      "marca": "Marca10",
+      "precio": 89.99,
+      "id": "28"
+    },
+    {
+      "nombre": "Producto11",
+      "Tipo": "AAAA",
+      "marca": "Marca11",
+      "precio": 69.99,
+      "id": "29"
+    },
+    {
+      "nombre": "Producto14",
+      "Tipo": "BBB",
+      "marca": "Marca12",
+      "precio": 49.99,
+      "id": "30"
+    },
+    {
+      "nombre": "Producto13",
+      "Tipo": "NNN",
+      "marca": "Marca13",
+      "precio": 39.99,
+      "id": "31"
+    },
+    {
+      "nombre": "Producto14",
+      "Tipo": "BBB",
+      "marca": "Marca14",
+      "precio": 79.99,
+      "id": "32"
+    },
+    {
+      "nombre": "Producto15",
+      "Tipo": "NNN",
+      "marca": "Marca15",
+      "precio": 59.99,
+      "id": "33"
+    }
+  ]
+}
+
+
+
+
+
+
