@@ -39,8 +39,8 @@ function borrarFiltroCarrito(evt,galeria){
     tipoAFiltrar.value=null
     galeria.mostrarGaleriaPorPantalla();
 }
-function actualizarLocalStorage(){
-    localStorage.setItem('carrito', JSON.stringify(carrito))
+function actualizarLocalStorage(elementToSave){
+    localStorage.setItem('carrito', JSON.stringify(elementToSave))
 }
 
 
@@ -86,6 +86,15 @@ async function fetchDataAndParse(dataPath) {
     }
 }
 
+function carritoParse(carritoDataJson){
+    if (carritoDataJson) {
+        let carritoSaved= new Carrito
+        carritoSaved= JSON.parse(carritoDataJson)
+        console.log(carritoSaved)
+        return carritoSaved
+    }
+}
+
 //INICIO
 
 async function inicio(){
@@ -114,25 +123,19 @@ async function inicio(){
 }
 
 
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    const carritoDataJson = localStorage.getItem('carrito');
+    if (carritoDataJson) {
+        // Si hay datos, debes analizarlos de nuevo desde JSON a un objeto JavaScript
+        let carritoSaved= new Carrito()
+        carritoSaved=carritoParse(carritoDataJson)
+    } else {
+        // Si no hay datos en localStorage, puedes tomar una acción predeterminada
+        console.log('No se encontraron datos del carrito en localStorage.');
+    }
+})
+
 inicio();
-
-  /*  document.addEventListener('DOMContentLoaded', ()=>{
-        if(JSON.parse(localStorage.getItem('carrito')) === null){
-            
-        }else{
-        // carrito = new Carrito();
-            //carrito = JSON.parse(localStorage.getItem('carrito'))
-        }
-        carrito.mostrarPorPantalla()
-    })*/
-
-
-
-
-
-
-
-
-
 
 

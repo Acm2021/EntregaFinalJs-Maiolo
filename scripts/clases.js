@@ -157,6 +157,7 @@ class Carrito{
             this.items.push(producto)
             this.precioTotal+= producto.getPrecio();
             this.precioTotal = Math.floor(this.precioTotal* 100) / 100
+            actualizarLocalStorage(this)
    };
     eliminarUnProducto(idAEliminar){
        const indiceAEliminar=this.items.findIndex((item)=>item.igualId(idAEliminar))
@@ -164,9 +165,11 @@ class Carrito{
         this.precioTotal-=this.items[indiceAEliminar].getPrecio()
         this.precioTotal = Math.floor(this.precioTotal * 100) / 100
         this.items.splice(indiceAEliminar, 1);
+        actualizarLocalStorage(this)
       } else {
         console.log("No se encontró ningún elemento con el ID especificado.");
       }
+      
     };
     mostrarProductosCarritoPorConsola(){
         for (const item of this.items) {
@@ -196,7 +199,7 @@ class Carrito{
         }
     const totalCarrito=document.querySelector('#totalCarrito')
     totalCarrito.textContent = "Total del carrito: $" + this.precioTotal;
-    actualizarLocalStorage()
+    //actualizarLocalStorage(this)
     }
     mostrarPrecioTotal(){
         console.log("El precio total de carrito es:" + "$" + this.precioTotal)
