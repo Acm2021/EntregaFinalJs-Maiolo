@@ -1,0 +1,45 @@
+$color_1: #525050;
+$color_2: #fff;
+$background-color_1: #F6F4EB;
+$background-color_2: #91C8E4;
+$background-color_3: #749BC2;
+$background-color_4: #4682A9;
+$background-color_5: #656666;
+
+/* ESTILO DE HEADER*/
+.banner {
+	background-image: url('../img/glaciarPortada.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 210px;
+}
+.logo {
+	width: 10rem;
+	height: 10rem;
+	margin: 10px;
+	border-radius: 5px;
+}
+.bgClaro {
+	background-color: $background-color_1;
+}
+.bgAzul1 {
+	background-color: $background-color_2;
+}
+.bgAzul2 {
+	background-color: $background-color_3;
+}
+.bgAzul3 {
+	background-color: $background-color_4;
+}
+.fuenteNavegacion {
+	color: $color_1;
+	font-size: 1rem;
+	text-transform: uppercase;
+	&:hover {
+		text-emphasis-style: bold;
+		background-color: $background-color_5;
+		border-radius: 5px;
+		color: $color_2;
+	}
+}

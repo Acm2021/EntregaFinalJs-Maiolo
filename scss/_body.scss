@@ -1,0 +1,40 @@
+$background-color_1: rgb(202, 236, 241);
+
+/* ESTILO DE BODY */
+.contenedorBody {
+	width: 95%;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: $background-color_1;
+	border-radius: 10px;
+	padding: 10px;
+}
+.tituloPrincipal {
+	text-align: center;
+	text-decoration: underline;
+	margin: 20px 0px;
+}
+.tituloSecundario {
+	text-align: right;
+	text-decoration: none;
+	margin-top: 100px;
+	margin-right: 500px;
+}
+.parrafoPrincipal {
+	text-align: justify;
+	margin-top: 50px;
+	margin-left: 850px;
+	margin-right: 150px;
+}
+.imagenPpal {
+	width: 40%;
+	height: 40%;
+	margin-top: 0px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+
+

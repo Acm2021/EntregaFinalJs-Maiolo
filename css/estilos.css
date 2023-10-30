@@ -1,0 +1,319 @@
+/* RESET DE ESTILOS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid black;
+  font-size: small;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.iconoWhatsap {
+  width: 4rem;
+  height: 4rem;
+  margin: right;
+}
+.iconoWhatsap:hover {
+  transform: translate(3px, -3px);
+}
+
+/* ESTILO DE HEADER*/
+.banner {
+  background-image: url("../img/glaciarPortada.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 210px;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.bgClaro {
+  background-color: #F6F4EB;
+}
+
+.bgAzul1 {
+  background-color: #91C8E4;
+}
+
+.bgAzul2 {
+  background-color: #749BC2;
+}
+
+.bgAzul3 {
+  background-color: #4682A9;
+}
+
+.fuenteNavegacion {
+  color: #525050;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.fuenteNavegacion:hover {
+  text-emphasis-style: bold;
+  background-color: #656666;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* ESTILO DE MAIN */
+.cuerpoMain {
+  border-bottom-width: medium;
+  border-bottom-color: #0e0f0f;
+  padding-bottom: 20px;
+}
+
+/* ESTILO DE BODY */
+.contenedorBody {
+  width: 95%;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(202, 236, 241);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+.tituloSecundario {
+  text-align: right;
+  text-decoration: none;
+  margin-top: 100px;
+  margin-right: 500px;
+}
+
+.parrafoPrincipal {
+  text-align: justify;
+  margin-top: 50px;
+  margin-left: 850px;
+  margin-right: 150px;
+}
+
+.imagenPpal {
+  width: 40%;
+  height: 40%;
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.imagenPortada {
+  border-radius: 10px;
+}
+
+.videoBordes {
+  border-radius: 10px;
+  margin-bottom: 5rem;
+}
+
+/* Formulario */
+.tituloPrincipalContatos {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.campos {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.btnFormulario {
+  background: radial-gradient(#4682A9, #4682A9, #253094);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.btnFormulario:hover {
+  background: #656666;
+  transform: translate(3px, -3px);
+}
+
+/* GALERIA */
+.contenedorTitulosDeLocaciones {
+  text-align: center;
+}
+
+.tituloPrincipalGaleria {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.tituloSecundarioGaleria {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* NOSOTROS */
+.tituloPrincipalUbicacion {
+  margin-left: 20px;
+  font-size: 35px;
+  text-align: left;
+}
+
+.containerParrafo {
+  width: 100%;
+  margin: initial;
+  padding: 20px;
+  text-align: justify;
+}
+
+.tituloSecundarioUbicacion {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 30px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.mapas {
+  border-color: #333;
+  border-width: 100;
+}
+
+/* SERVICIOS */
+.tituloPpalServicios {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  text-align: left;
+  color: #083877;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.iconoReservas {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.iconoReservas:hover {
+  transform: translate(3px, -3px);
+}
+
+.imagenReserva {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.contenedorDeServicios {
+  width: 90%;
+}
+
+.listaServicios {
+  text-decoration: none;
+  text-align: left;
+}
+
+.elementoListaServicios {
+  margin-top: 10px;
+  margin-left: 0px;
+  font-size: 1rem;
+  text-align: left;
+  color: #595b5e;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=estilos.css.map */
+ul {
+  list-style: none;
+}
+
+#encabezado {
+  margin: 30px 0;
+}
+
+.submenu {
+  position:relative;
+}
+
+#img-carrito {
+  cursor: pointer;
+  width: 5rem;
+  /*align-items: end;*/
+}
+
+#carrito {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+#lista-producto .row {
+  margin-bottom: 20px;
+}
+
+
+.agregar-carrito {
+  margin: 10px 0;
+}
+
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+.ml-auto {
+  margin-left: auto; /* Esto alinea a la derecha */
+}

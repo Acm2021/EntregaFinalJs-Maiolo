@@ -1,0 +1,27 @@
+$font-family_1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$border-color_1: #333;
+
+/* NOSOTROS */
+.tituloPrincipalUbicacion {
+	margin-left: 20px;
+	font-size: 35px;
+	text-align: left;
+}
+.containerParrafo {
+	width: 100%;
+	margin: initial;
+	padding: 20px;
+	text-align: justify	;
+}
+.tituloSecundarioUbicacion {
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 30px;
+	text-align: left;
+	font-family: $font-family_1;
+	font-style: italic;
+}
+.mapas {
+	border-color: $border-color_1;
+	border-width: 100;
+}

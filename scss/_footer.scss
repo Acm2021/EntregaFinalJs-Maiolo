@@ -1,0 +1,15 @@
+
+/* FOOTER */
+footer {
+	border-top: 1px solid black;
+	font-size: small;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+}
+.iconoWhatsap {
+	width: 4rem;
+	height: 4rem;
+	margin: right;
+	@include botonMovimiento;
+}

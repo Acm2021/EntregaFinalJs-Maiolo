@@ -1,0 +1,38 @@
+$color_1: #333;
+$color_2: #fff;
+$background-color_1: #4682A9;
+$background-color_2: #656666;
+$background-color_3: #253094;
+
+/* Formulario */
+.tituloPrincipalContatos {
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 2rem;
+	text-align: left;
+}
+form {
+	margin-top: 20px;
+}
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: $color_1;
+	
+	
+}
+.campos {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 1rem;
+	margin-bottom: 10px;
+
+}
+.btnFormulario {
+	@include boton1;
+	@include botonMovimientoYFondo;
+}

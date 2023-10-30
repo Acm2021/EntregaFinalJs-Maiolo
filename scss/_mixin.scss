@@ -1,0 +1,30 @@
+
+@mixin boton1{
+    background: radial-gradient(#4682A9, #4682A9, #253094);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+
+}
+
+@mixin botonMovimiento{
+    &:hover {
+		transform:translate(3px, -3px);
+    }
+}
+
+@mixin botonMovimientoYFondo{
+    &:hover {
+		background: $background-color_2;
+		transform:translate(3px, -3px);
+    }
+}
+
+@mixin redondearBordes1{
+    border-radius: 10px;
+}

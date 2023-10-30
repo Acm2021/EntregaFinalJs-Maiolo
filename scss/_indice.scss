@@ -1,0 +1,11 @@
+.imagenPortada{
+    @include redondearBordes1;
+    
+}
+
+
+
+.videoBordes{
+    @include redondearBordes1;
+    margin-bottom: 5rem;
+}
