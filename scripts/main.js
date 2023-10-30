@@ -2,7 +2,7 @@
 //alert("VINCULADO OK");
 
 /*---------------------------------------------------------*/
-function agregarProductoAlCarrito(evt){
+function agregarProductoAlCarrito(evt,galeria,carrito){
     if(evt.target.classList.contains("AgregarAlCarrito")){
         const producto =evt.target.parentElement
         const id =producto.querySelector("#card-id").textContent
@@ -11,7 +11,7 @@ function agregarProductoAlCarrito(evt){
         carrito.mostrarPorPantalla()  
     }
 }
-function eliminarProductoDelCarrito(evt){
+function eliminarProductoDelCarrito(evt,carrito){
     
     if(evt.target.id==="borrarProducto"){
         idProductoABorrar =evt.target.getAttribute('data-id')
@@ -19,7 +19,7 @@ function eliminarProductoDelCarrito(evt){
         carrito.mostrarPorPantalla();
     }
 }
-function vaciarCarrito(){
+function vaciarCarrito(evt,carrito){
     carrito.vaciar()
     carrito.mostrarPorPantalla()
 }
@@ -30,7 +30,7 @@ function filtrarGaleria(){
     const galeriaFiltrada = new GaleriaProductos(galeria.filtrarProductos(nombreAFiltrar.value,marcaAFiltrar.value,tipoAFiltrar.value));
     galeriaFiltrada.mostrarGaleriaPorPantalla()
 }
-function borrarFiltroCarrito(){
+function borrarFiltroCarrito(galeria){
     const nombreAFiltrar=document.querySelector("#busquedaNombre")
     const marcaAFiltrar=document.querySelector("#busquedaMarca")
     const tipoAFiltrar=document.querySelector("#busquedaTipo")
@@ -88,13 +88,33 @@ async function fetchDataAndParse(dataPath) {
 
 //INICIO
 
-let DATA_PATH = '../data/data.json';
+async function inicio(){
+    let DATA_PATH = '../data/data.json';
+    const arregloDeProductos = await  fetchDataAndParse(DATA_PATH);
 
-(async () => {
-    const arregloDeProductos = await fetchDataAndParse(DATA_PATH);
     const galeria = new GaleriaProductos(arregloDeProductos);
     let carrito = new Carrito();
     galeria.mostrarGaleriaPorPantalla();
+
+    const contendorProductosPagina= document.querySelector("#contendorProductos")
+    contendorProductosPagina.addEventListener('click', (evt) => {
+        agregarProductoAlCarrito(evt, galeria,carrito)})
+
+    const contendorCarrito = document.querySelector("#cuerpoFilasCarrito")
+    contendorCarrito.addEventListener('click', (evt) => {eliminarProductoDelCarrito(evt,carrito)})
+
+    const vaciarCarritoElement = document.querySelector("#vaciar-carrito")
+    vaciarCarritoElement.addEventListener('click', (evt) => {vaciarCarrito(evt,carrito)})
+
+
+    const btnFiltrarGaleria = document.querySelector("#btnFiltroGaleria")
+    btnFiltrarGaleria.addEventListener('click',filtrarGaleria)
+    const btnBorrarFiltradoGaleria= document.querySelector("#btnBorrarFiltroGaleria")
+    btnBorrarFiltradoGaleria.addEventListener('click', (evt)=>{borrarFiltroCarrito(evt,galeria)})
+}
+
+
+inicio();
 
   /*  document.addEventListener('DOMContentLoaded', ()=>{
         if(JSON.parse(localStorage.getItem('carrito')) === null){
@@ -108,29 +128,6 @@ let DATA_PATH = '../data/data.json';
 
 
 
-
-
-
-
-
-})();
-
-
-
-const contendorProductosPagina= document.querySelector("#contendorProductos")
-contendorProductosPagina.addEventListener('click', agregarProductoAlCarrito)
-
-const contendorCarrito = document.querySelector("#cuerpoFilasCarrito")
-contendorCarrito.addEventListener('click', eliminarProductoDelCarrito)
-
-const vaciarCarritoElement = document.querySelector("#vaciar-carrito")
-vaciarCarritoElement.addEventListener('click', vaciarCarrito)
-
-
-const btnFiltrarGaleria = document.querySelector("#btnFiltroGaleria")
-btnFiltrarGaleria.addEventListener('click',filtrarGaleria)
-const btnBorrarFiltradoGaleria= document.querySelector("#btnBorrarFiltroGaleria")
-btnBorrarFiltradoGaleria.addEventListener('click', borrarFiltroCarrito)
 
 
 
