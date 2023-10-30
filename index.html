@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container justify-content-end">
+        <div class="row">
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="img/carrito.jpg" id="img-carrito">
+
+                        <div id="carrito">
+
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Id</th>
+                                        <th>Cantidad</th>
+                                        <th>Borrar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cuerpoFilasCarrito"></tbody>
+
+                            </table>
+                            <h4 id="totalCarrito"></h4>
+                            <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contanier row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5">
+        <div>
+            <label for="busquedaNombre"> Nombre </label>
+            <input class="campos" type="text" id="busquedaNombre" placeholder="Ingrese Nombre">
+        </div>
+        <div>
+            <label for="busquedaMarca"> Marca </label>
+            <input class="campos" type="text" id="busquedaMarca" placeholder="Ingrese Marca">
+        </div>
+        <div>
+            <label for="busquedaTipo"> Tiṕo </label>
+            <input class="campos" type="text" id="busquedaTipo" placeholder="Ingrese Tipo">
+        </div>
+        <div>
+            <button id="btnFiltroGaleria">Filtrar</button>
+        </div>
+        <div>
+            <button id="btnBorrarFiltroGaleria">Borrar Filtro</button>
+        </div>
+    </div>
+
+    <div id="contendorProductos" class="container">
+        <div id="fila" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="./scripts/clases.js"></script>
+<script src="./scripts/main.js"></script>
+
+</html>

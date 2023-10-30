@@ -1,0 +1,44 @@
+ul {
+    list-style: none;
+}
+
+#encabezado {
+    margin: 30px 0;
+}
+
+.submenu {
+    position:relative;
+}
+
+#img-carrito {
+    cursor: pointer;
+    width: 8rem;
+    align-items: end;
+}
+
+
+#lista-producto .row {
+    margin-bottom: 20px;
+}
+
+
+.agregar-carrito {
+    margin: 10px 0;
+}
+
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
