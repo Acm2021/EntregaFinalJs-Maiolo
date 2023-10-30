@@ -111,7 +111,8 @@ class GaleriaProductos{
         if (resultadoFiltro.length > 0) {
             return resultadoFiltro;
         } else {
-            console.error("NO HAY RESULTADOS PARA SU BÚSQUEDA");
+            Swal.fire("No hay resultados para su búqueda")
+            
         }
     }
     buscarProductoPorId(idConsultado){

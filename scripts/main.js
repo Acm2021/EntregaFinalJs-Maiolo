@@ -1,5 +1,4 @@
 
-//alert("VINCULADO OK");
 
 /*---------------------------------------------------------*/
 function agregarProductoAlCarrito(evt,galeria,carrito){
@@ -55,7 +54,7 @@ async function dataRequest (path){
         return jsonData
         
     }catch(error){
-      console.error('Error:', error);
+        Swal.fire(error)
     };
 }
 
@@ -98,7 +97,6 @@ function carritoParse(carritoDataJson){
 function cargarCarritoConStorage(){
     const carritoDataJson = localStorage.getItem('carrito');
     if (carritoDataJson) {
-        // Si hay datos, debes analizarlos de nuevo desde JSON a un objeto JavaScript
         carritoSaved= new Carrito()
         carritoSaved2= new Carrito()
         carritoSaved=carritoParse(carritoDataJson)
@@ -109,21 +107,15 @@ function cargarCarritoConStorage(){
              item.marca = carritoSaved.items[i].marca;
              item.precio = carritoSaved.items[i].precio;
              item.id = carritoSaved.items[i].id;
-            // Realiza alguna acción con el elemento 'item'
             carritoSaved2.items.push(item)
         }
-        
-        
-        //carritoSaved2.items=carritoSaved.items
         carritoSaved2.precioTotal=carritoSaved.precioTotal
         carritoSaved2.cantidadElemento=carritoSaved.cantidadElemento
+        carritoSaved2.mostrarPorPantalla()
         return carritoSaved2
     } else {
-        // Si no hay datos en localStorage, puedes tomar una acción predeterminada
         console.log('No se encontraron datos del carrito en localStorage.');
     }
-    
-  //  carrito.mostrarPorPantalla()
 }
 
 //INICIO
@@ -135,7 +127,7 @@ async function inicio(){
     const galeria = new GaleriaProductos(arregloDeProductos);
     let carrito = new Carrito();
     carrito=cargarCarritoConStorage()
-    carrito.mostrarPorPantalla()
+    //carrito.mostrarPorPantalla()
     galeria.mostrarGaleriaPorPantalla();
 
     const contendorProductosPagina= document.querySelector("#contendorProductos")
