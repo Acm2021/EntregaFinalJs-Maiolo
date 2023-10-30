@@ -23,14 +23,14 @@ function vaciarCarrito(evt,carrito){
     carrito.vaciar()
     carrito.mostrarPorPantalla()
 }
-function filtrarGaleria(){
+function filtrarGaleria(evt,galeria){
     const nombreAFiltrar=document.querySelector("#busquedaNombre")
     const marcaAFiltrar=document.querySelector("#busquedaMarca")
     const tipoAFiltrar=document.querySelector("#busquedaTipo")
     const galeriaFiltrada = new GaleriaProductos(galeria.filtrarProductos(nombreAFiltrar.value,marcaAFiltrar.value,tipoAFiltrar.value));
     galeriaFiltrada.mostrarGaleriaPorPantalla()
 }
-function borrarFiltroCarrito(galeria){
+function borrarFiltroCarrito(evt,galeria){
     const nombreAFiltrar=document.querySelector("#busquedaNombre")
     const marcaAFiltrar=document.querySelector("#busquedaMarca")
     const tipoAFiltrar=document.querySelector("#busquedaTipo")
@@ -65,7 +65,7 @@ function jsonDataParseProducts(jsonData){
         const arregloDeProductos = jsonData.productos.map(productoData => {
             return new Producto(
                 productoData.nombre,
-                productoData.descripcion,
+                productoData.Tipo,
                 productoData.marca,
                 productoData.precio,
                 productoData.id
@@ -108,7 +108,7 @@ async function inicio(){
 
 
     const btnFiltrarGaleria = document.querySelector("#btnFiltroGaleria")
-    btnFiltrarGaleria.addEventListener('click',filtrarGaleria)
+    btnFiltrarGaleria.addEventListener('click',(evt)=> {filtrarGaleria(evt,galeria)})
     const btnBorrarFiltradoGaleria= document.querySelector("#btnBorrarFiltroGaleria")
     btnBorrarFiltradoGaleria.addEventListener('click', (evt)=>{borrarFiltroCarrito(evt,galeria)})
 }

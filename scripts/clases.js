@@ -62,7 +62,7 @@ class Producto{
         const card = document.createElement('div');
         card.innerHTML = `
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="../img/productos/${this.id}.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${this.nombre}</h5>
                     <p class="card-marca">${this.marca}</p>
@@ -151,10 +151,30 @@ class Carrito{
         this.items = [];
         this.precioTotal=0;
     }
+    
+    buscaSiExisteProductoEnCarrito(producto){
+        this.items.forEach((item) => {
+        let valorRetornado= item.igualId(producto.getId())
+        if(valorRetornado!==false){ 
+            console.log("PASA POR ACA")
+            return (valorRetornado.index)
+        }
+        });
+        return false
+    }
+    
+    
+    
+    
     agregarUnProducto(producto){
-        this.items.push(producto)
-        this.precioTotal+= producto.getPrecio();
-        this.precioTotal = Math.floor(this.precioTotal* 100) / 100
+        const index=this.buscaSiExisteProductoEnCarrito(producto)
+        if (index===false){
+            this.items.push(producto)
+            this.precioTotal+= producto.getPrecio();
+            this.precioTotal = Math.floor(this.precioTotal* 100) / 100
+        }
+       
+
     };
     eliminarUnProducto(idAEliminar){
        const indiceAEliminar=this.items.findIndex((item)=>item.igualId(idAEliminar))
@@ -183,7 +203,7 @@ class Carrito{
             const cuerpoFilasCarrito=document.querySelector('#cuerpoFilasCarrito')
             const filaCarrito= document.createElement('tr')
             filaCarrito.innerHTML = `
-                <td><img src='#' width="100" /></td>
+                <td><img src='../img/productos/${item.getId()}.jpg' width="100" /></td>
                 <td> ${item.getNombre()}</td>
                 <td> ${item.getPrecio()}</td>
                 <td> ${item.getId()}</td>
