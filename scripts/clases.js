@@ -150,32 +150,14 @@ class Carrito{
     constructor(){
         this.items = [];
         this.precioTotal=0;
+        this.cantidadElemento=0;
     }
-    
-    buscaSiExisteProductoEnCarrito(producto){
-        this.items.forEach((item) => {
-        let valorRetornado= item.igualId(producto.getId())
-        if(valorRetornado!==false){ 
-            console.log("PASA POR ACA")
-            return (valorRetornado.index)
-        }
-        });
-        return false
-    }
-    
-    
-    
     
     agregarUnProducto(producto){
-        const index=this.buscaSiExisteProductoEnCarrito(producto)
-        if (index===false){
             this.items.push(producto)
             this.precioTotal+= producto.getPrecio();
             this.precioTotal = Math.floor(this.precioTotal* 100) / 100
-        }
-       
-
-    };
+   };
     eliminarUnProducto(idAEliminar){
        const indiceAEliminar=this.items.findIndex((item)=>item.igualId(idAEliminar))
        if (indiceAEliminar !== -1) {

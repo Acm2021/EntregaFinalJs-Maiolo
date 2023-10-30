@@ -89,7 +89,7 @@ async function fetchDataAndParse(dataPath) {
 //INICIO
 
 async function inicio(){
-    let DATA_PATH = '../data/data.json';
+    let DATA_PATH = 'data/data.json';
     const arregloDeProductos = await  fetchDataAndParse(DATA_PATH);
 
     const galeria = new GaleriaProductos(arregloDeProductos);
