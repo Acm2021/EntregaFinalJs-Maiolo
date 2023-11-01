@@ -24,7 +24,7 @@
 </head>
 
 
-<body>
+<body class="container-fluid">
     <header>
         <div class="container-fluid banner ">
             <a href="../index.html"><img data-aos="flip-left" class="logo" src="../img/C.png" alt="Logo"></a>
@@ -48,7 +48,7 @@
                         <li class="nav-item  ">
                             <a class="nav-link fuenteNavegacion" href="nosotros.html">Nosotros</a>
                         </li>
-                      
+
                         <li class="nav-item ">
                             <a class="nav-link  fuenteNavegacion" href="contacto.html">Contacto</a>
                         </li>
@@ -65,71 +65,95 @@
         </nav>
 
     </header>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="me-auto">
+                    <ul>
+                        <li class="submenu d-flex justify-content-end" >
 
-    <div class="container">
-        <div class="row">
-            <div class="ml-auto">
-                <ul>
-                    <li class="submenu" class="ml-auto">
-                        
-                        <img src="../img/carrito.jpg" id="img-carrito">
-                        <div id="carrito">
-                            
-                            <table id="lista-carrito" class="u-full-width">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th>Id</th>
-                                        <th>Cantidad</th>
-                                        <th>Borrar</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="cuerpoFilasCarrito"></tbody>
+                            <img src="../img/carrito.jpg" id="img-carrito" class="d-flex justify-content-end">
+                            <div id="carrito">
 
-                            </table>
-                            <h4 id="totalCarrito"></h4>
-                            <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
-                        </div>
-                    </li>
-                </ul>
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th> &nbsp;Imagen &nbsp; </th>
+                                            <th> &nbsp; Nombre &nbsp; </th>
+                                            <th> &nbsp; Precio&nbsp; </th>
+                                            <th> &nbsp; Id&nbsp; </th>
+                                            <th> &nbsp; Borrar&nbsp; </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cuerpoFilasCarrito"></tbody>
+
+                                </table>
+                                <h4 id="totalCarrito"></h4>
+                                <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="contanier row  row-cols-1 row-cols-sm-3 row-cols-md-4 g-4  ">
+            <div>
+                <label for="busquedaNombre"> Nombre </label>
+                <input class="campos" type="text" id="busquedaNombre" placeholder="Ingrese Nombre">
+            </div>
+            <div>
+                <label for="busquedaMarca"> Marca </label>
+                <input class="campos" type="text" id="busquedaMarca" placeholder="Ingrese Marca">
+            </div>
+            <div>
+                <label for="busquedaTipo"> Descripción </label>
+                <input class="campos" type="text" id="busquedaTipo" placeholder="Ingrese descripción">
+            </div>
+            <div>
+                <div>
+                    <button id="btnFiltroGaleria">Filtrar</button>
+                </div>
+                <div>
+                    <button id="btnBorrarFiltroGaleria">Borrar Filtro</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contendorProductos" class="container">
+            <div id="fila" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+
+        </div>
     </div>
-    <div class="contanier row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5">
-        <div>
-            <label for="busquedaNombre"> Nombre </label>
-            <input class="campos" type="text" id="busquedaNombre" placeholder="Ingrese Nombre">
+
+    <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <a href="https://wa.me/tunumerodetelefono"> <img class="iconoWhatsap" src="../img/whatsapp.png"
+                alt="Icono de Whatsapp"></a>
+
+        <div class="container ">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">&copy; ChulisInn - Tu Bed&Breakfast</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="24" height="24"
+                                src="../img/facebook.png" alt="logo facebook"> </a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="24" height="24"
+                                src="../img/instagram.png" alt="logo instagram"> </a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img class="bi" width="24" height="24"
+                                src="../img/twitter.png" alt="logo twiter"> </a></li>
+                </ul>
+            </footer>
         </div>
-        <div>
-            <label for="busquedaMarca"> Marca </label>
-            <input class="campos" type="text" id="busquedaMarca" placeholder="Ingrese Marca">
-        </div>
-        <div>
-            <label for="busquedaTipo"> Descripción </label>
-            <input class="campos" type="text" id="busquedaTipo" placeholder="Ingrese descripción">
-        </div>
-        <div>
-            <button id="btnFiltroGaleria">Filtrar</button>
-        </div>
-        <div>
-            <button id="btnBorrarFiltroGaleria">Borrar Filtro</button>
-        </div>
-    </div>
-
-    <div id="contendorProductos" class="container">
-        <div id="fila" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
-
-    </div>
 
 
-
-
-
-
-
-
+    </footer>
 </body>
 
 

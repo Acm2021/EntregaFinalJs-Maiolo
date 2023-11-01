@@ -276,6 +276,7 @@ ul {
 }
 
 #img-carrito {
+  display: inline;
   cursor: pointer;
   width: 5rem;
   /*align-items: end;*/
@@ -283,8 +284,9 @@ ul {
 
 #carrito {
   display: none;
+  align-items: end;
   background-color: white;
-  padding: 20px;
+  padding: 0px;
   min-height: 400px;
   min-width: 300px;
 }
@@ -316,4 +318,15 @@ ul {
 }
 .ml-auto {
   margin-left: auto; /* Esto alinea a la derecha */
+}
+
+.card-custom {
+  width: 18rem;
+  height: 100%; /* Establece la altura deseada para todas las tarjetas */
+}
+
+.imgproducto{
+
+  width: 15rem;
+  height: 15rem;
 }
