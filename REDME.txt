@@ -1,0 +1,3 @@
+-Si bien el proyecto consta de varias paginas (dado que se buscó verlo como un proyecto integral complementando el trabajo realizado en el curso previo de html), la pagina que contiene el trabajo realizado en Js es la que correcponde a productos. 
+Se puede observar que en dicha pagina, se utilizaran funciones asincronicas/promesas, se manejo el localStorage, funciones de orden superior, fetch, JSON y librerias.
+Por un tema de tiempo, la estetica particular de esta pagina no ha sido la mas cuidada.
