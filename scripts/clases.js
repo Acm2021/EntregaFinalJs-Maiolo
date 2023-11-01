@@ -65,9 +65,9 @@ class Producto{
                 <img src="../img/productos/${this.id}.jpg" class="imgproducto card-img-top mx-auto" alt="${this.nombre}">
                 <div class="card-body">
                     <h5 class="card-title">${this.nombre}</h5>
-                    <p class="card-marca">${this.marca}</p>
-                    <p class="tipo-marca">${this.tipo}</p>
-                    <p id="card-id">${this.id}</p>
+                    <p class="card-marca">Marca: ${this.marca}</p>
+                    <p class="tipo-marca">Tipo: ${this.tipo}</p>
+                    <p id="card-id">ID: ${this.id}</p>
                     <p class="card-precio">${this.precio}</p>
                     <a href="#" class="btn btn-primary AgregarAlCarrito">Agregar al carrito</a>
                 </div>
